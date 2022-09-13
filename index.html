@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
@@ -8,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/TEST1.loader.js"></script>
+    <script src="Build/TEST2.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/TEST1.data.gz",
-        frameworkUrl: "Build/TEST1.framework.js.gz",
-        codeUrl: "Build/TEST1.wasm.gz",
+        dataUrl: "Build/TEST2.data",
+        frameworkUrl: "Build/TEST2.framework.js",
+        codeUrl: "Build/TEST2.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Figure Drawing",
